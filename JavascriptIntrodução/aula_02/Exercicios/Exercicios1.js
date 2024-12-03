@@ -10,5 +10,9 @@ function calcularNovoSalario(salario , abono){  // função retorna o valor do s
     return novoSalario = salario + abono; // retorno da função novo salario
 }
 
-console.log("Seu novo salario e: ", calcularNovoSalario(salario,abono)); // saida de dos dados do novo salario.
+console.log("Seu novo salario e: ", new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(calcularNovoSalario(salario,abono))); // saida de dos dados do novo salario.
+
 
