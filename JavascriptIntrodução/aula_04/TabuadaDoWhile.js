@@ -1,9 +1,9 @@
 const leia = require('readline-sync')
 
-let contador = 11;
+let contador = 1;
 let numero = leia.questionInt('Digite um numero: ');
 
-while(contador <= 10) {
+do {
     console.log(`${numero} x ${contador} = ${numero * contador}`);
     contador++;
-}
+} while(contador <= 10)  
